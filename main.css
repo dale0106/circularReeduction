@@ -1,0 +1,55 @@
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+#circleHolder {
+	width: 100%;
+	height: 100%;
+	background-color: #4F6AE8;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+}
+
+#outerCircle {
+	height: 50vh;
+	border: 2px solid black;
+	width: 50vh;
+	margin: 0 auto;
+	border-radius: 100%;
+}
+
+#innerCircle {
+	height: 10vh;
+	width: 10vh;
+	margin: 0 auto;
+	background-color: black;
+	border-radius: 100%;
+	margin-top: 19.5vh;
+	animation-name: expandCircle;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes expandCircle {
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(5);
+		background-color: white;
+	}
+	45% {
+		transform: scale(5);
+		background-color: white;
+	}
+	90% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
